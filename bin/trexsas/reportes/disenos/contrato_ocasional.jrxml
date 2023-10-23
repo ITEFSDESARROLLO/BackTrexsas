@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="contrato_ocasional" pageWidth="612" pageHeight="942" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="8a98866a-6347-4958-9644-4d27c9d2e184">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="numeroFuec" class="java.lang.String"/>
+	<parameter name="numeroContrato" class="java.lang.String"/>
+	<parameter name="placaVehiculo" class="java.lang.String"/>
+	<parameter name="marcaVehiculo" class="java.lang.String"/>
+	<parameter name="modeloVehiculo" class="java.lang.String"/>
+	<parameter name="numeroInternoVehiculo" class="java.lang.String"/>
+	<parameter name="nombrePropietarioVehiculo" class="java.lang.String"/>
+	<parameter name="ciudadPropietarioVehiculo" class="java.lang.String"/>
+	<parameter name="cedulaPropietarioVehiculo" class="java.lang.String"/>
+	<parameter name="telefonoPropietarioVehiculo" class="java.lang.String"/>
+	<parameter name="numeroSoat" class="java.lang.String"/>
+	<parameter name="vigenciaSoat" class="java.lang.String"/>
+	<parameter name="aseguradoraSoat" class="java.lang.String"/>
+	<parameter name="vigenciaPoliza" class="java.lang.String"/>
+	<parameter name="aseguradoraPoliza" class="java.lang.String"/>
+	<parameter name="numeroPasajerosVehiculo" class="java.lang.String"/>
+	<parameter name="numeroTarjetaOperacion" class="java.lang.String"/>
+	<parameter name="vigenciaTarjetaOperacion" class="java.lang.String"/>
+	<parameter name="diaContrato" class="java.lang.String"/>
+	<parameter name="mesContrato" class="java.lang.String"/>
+	<parameter name="añoContrato" class="java.lang.String"/>
+	<parameter name="razonSocialCliente" class="java.lang.String"/>
+	<parameter name="nitCliente" class="java.lang.String"/>
+	<parameter name="objetoContrato" class="java.lang.String"/>
+	<parameter name="origenDestino" class="java.lang.String"/>
+	<parameter name="fechaInicial" class="java.lang.String"/>
+	<parameter name="fechaFinal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="numeroFuec" class="java.lang.String"/>
+	<field name="numeroContrato" class="java.lang.String"/>
+	<field name="placaVehiculo" class="java.lang.String"/>
+	<field name="marcaVehiculo" class="java.lang.String"/>
+	<field name="modeloVehiculo" class="java.lang.String"/>
+	<field name="numeroInternoVehiculo" class="java.lang.String"/>
+	<field name="nombrePropietarioVehiculo" class="java.lang.String"/>
+	<field name="ciudadPropietarioVehiculo" class="java.lang.String"/>
+	<field name="cedulaPropietarioVehiculo" class="java.lang.String"/>
+	<field name="telefonoPropietarioVehiculo" class="java.lang.String"/>
+	<field name="numeroSoat" class="java.lang.String"/>
+	<field name="vigenciaSoat" class="java.lang.String"/>
+	<field name="aseguradoraSoat" class="java.lang.String"/>
+	<field name="vigenciaPoliza" class="java.lang.String"/>
+	<field name="aseguradoraPoliza" class="java.lang.String"/>
+	<field name="numeroPasajerosVehiculo" class="java.lang.String"/>
+	<field name="numeroTarjetaOperacion" class="java.lang.String"/>
+	<field name="vigenciaTarjetaOperacion" class="java.lang.String"/>
+	<field name="diaContrato" class="java.lang.String"/>
+	<field name="mesContrato" class="java.lang.String"/>
+	<field name="añoContrato" class="java.lang.String"/>
+	<field name="razonSocialCliente" class="java.lang.String"/>
+	<field name="nitCliente" class="java.lang.String"/>
+	<field name="objetoContrato" class="java.lang.String"/>
+	<field name="origenDestino" class="java.lang.String"/>
+	<field name="fechaInicial" class="java.lang.String"/>
+	<field name="fechaFinal" class="java.lang.String"/>
+	<background>
+		<band height="922">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="180" y="360" width="237" height="110" uuid="76a9db7b-054e-466f-ab45-1d8c0db1dc54"/>
+				<imageExpression><![CDATA["logos/marca_aguatrex.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="40" width="130" height="15" uuid="d57adf51-ca14-4e7e-b55a-792072ec4ed4">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUMERO DE FUEC     ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="140" y="25" width="260" height="20" uuid="4cb03279-c22f-4fdb-ae56-ed9a1b5e9038">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRATO DE SERVICIOS DE TRANSPORTE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="471" y="20" width="80" height="20" uuid="b769dc39-c6a5-47bd-b44e-9bf0680cec07"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="551" y="20" width="50" height="20" uuid="3518fb62-7c3a-48e2-b584-5b71f3e5daf5"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="140" y="0" width="260" height="30" uuid="36701503-c2a4-457c-a7b8-fe6f01085b5d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTES EXCLUSIVOS TREX S.A.S
+NIT. 900.973.521-5]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="471" y="50" width="100" height="20" uuid="5d97ce88-8a65-4d31-ae54-a1f233b8f3b0"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="120" height="70" uuid="76206791-b974-4440-adcd-514c18521b79"/>
+				<imageExpression><![CDATA["logos/Logo trex.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="260" y="40" width="162" height="15" uuid="33a8fb07-81de-435f-835b-0deada648e63">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$P{numeroFuec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="55" width="292" height="15" uuid="8ea24b16-b5c1-4756-85f9-eb98907560c0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NUMERO DE CONTRATO "+$P{numeroContrato}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="795" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="10" width="570" height="80" uuid="96308a5a-77b9-46da-84f0-dc86d939c97b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Entre los suscritos a saber por una parte <style isBold='true' pdfFontName='Helvetica-Bold'>TRANSPORTES EXCLUSIVOS TREX S.A.S.</style> con NIT: <style isBold='true' pdfFontName='Helvetica-Bold'>900.973.521</style>; quien para los efectos del presente contrato se llamará CONTRATISTA y como administrador del vehículo de placa <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{placaVehiculo}+"</style>; propiedad del señor(a) <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{nombrePropietarioVehiculo}+"</style>, mayor de edad, vecino(a) de la ciudad de "+$P{ciudadPropietarioVehiculo}+", e identificado(a) con Cedula de Ciudadanía Nº "+$P{cedulaPropietarioVehiculo}+", por otra parte el (a) señor (a) o entidad: <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{razonSocialCliente}+"</style>, Igualmente mayor de edad, vecino (a) de Bogotá, identificado con la cédula de ciudadanía o NIT: "+$P{nitCliente}+", quien en adelante y para los efectos del presente contrato se llamará CONTRATANTE, ambos hábiles para contratar y obligarse, han decidido celebrar el presente contrato de <style isBold='true' pdfFontName='Helvetica-Bold'>PRESTACIÓN DE SERVICIO DE TRANSPORTE</style>, que se regirá por las siguientes <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS. PRIMERO: OBJETO</style>, EL CONTRATANTE contrata los servicios de transporte de acuerdo a su Plan de Movilización, con las siguientes condiciones:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-1" y="200" width="571" height="450" uuid="cc676139-04c9-4890-85f6-a5e6021a287d"/>
+				<textElement textAlignment="Justified" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["El CONTRATISTA SE OBLIGA a prestarle de manera eficaz, responsabilidad en el servicio, garantizando eficiencia y cumplimiento <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSURAS: SEGUNDO: OBLIGACIONES DEL CONTRATISTA:2 SEGUROS:</style> Tomara por cuenta propia, una póliza de seguros de responsabilidad civil contractual y extracontractual que les ampare contra los riesgos inherentes a la actividad transportadora así: <style isBold='true' pdfFontName='Helvetica-Bold'>2.1</style> Póliza de responsabilidad civil contractual: muerte accidental, incapacidad total y permanente, incapacidad temporal, gastos médicos, amparo patrimonial, primeros auxilios, asistencia jurídica en proceso civil, accidentes personales <style isBold='true' pdfFontName='Helvetica-Bold'>2.2</style> Póliza de responsabilidad civil extracontractual: daños a bienes de terceros, muerte o lesiones en una persona, muerte o lesiones a dos o más personas, amparo patrimonial, asistencia jurídica en el proceso civil y penal. Con lo anterior le damos cumplimiento al articulo 17 Del decreto 174 de 2001, razón por la que somos obligados a tomar las pólizas. <style isBold='true' pdfFontName='Helvetica-Bold'>2.3</style> El vehículo que el contratista destine a la prestación de este servicio de transporte, debe cumplir con las condiciones técnico-mecánicas, homologadas por el ministerio de transporte y se relacionan, con identificación de numero de placa, modelo y numero interno del vehículo, que se incorpora a este contrato. <style isBold='true' pdfFontName='Helvetica-Bold'>2.4</style> El contratante dentro de su operación interna cuenta con los supervisores de vía que vigilaran el cumplimiento del recorrido. Y de esta manera solucionar a la mayor solucionar a la mayor brevedad posible cualquier inconveniente que se presente. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSURAS: TERCERA:</style> El vehículo que preste el contratista a utilizar y solicitado por el contratante es Placa: <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{placaVehiculo}+"</style> Marca: <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{marcaVehiculo}+"</style>, Modelo <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{modeloVehiculo}+"</style>, Numero interno <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{numeroInternoVehiculo}+"</style>, Teléfono <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{telefonoPropietarioVehiculo}+"</style>, Póliza de seguro obligatorio para accidentes de transito (SOAT) <style isBold='true' pdfFontName='Helvetica-Bold'>N° "+$P{numeroSoat}+"</style>, Vigente hasta el <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{vigenciaSoat}+"</style>, Expedida por la compañía de seguros <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{aseguradoraSoat}+"</style>, Pólizas de la empresa de responsabilidad Civil contractual y extracontractual vigente hasta el <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{vigenciaPoliza}+"</style>. Expedida por la compañía de <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{aseguradoraPoliza}+"</style>, la capacidad del vehículo es de <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{numeroPasajerosVehiculo}+" pasajeros</style>, según la tarjeta de operación N° <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{numeroTarjetaOperacion}+"</style>, Vigente hasta el <style isBold='true' pdfFontName='Helvetica-Bold'>"+$P{vigenciaTarjetaOperacion}+".</style> Expedida por el ministerio de transporte y el contratista o en su defecto a las empresas con la que se haya realizado acuerdos, convenio de colaboración empresarial o contrato con empresas de transporte automotor por carretera, de acuerdo con el decreto 171 y 174 de 2001. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: CUARTA:</style> El CONTRATISTA, será el único responsable de la póliza extracontractual, revisión técnico mecánica y gases, por estar legalmente vinculados a la empresa de transporte de los daños con su vehículo que se de origen a terceros, bien sea por daños materiales o lesiones a personas, y desde ahora manifiesta que habrá rotula al principio de solidaridad con la contratante, razón por la que, únicamente responderá el contratista, quien para tal evento estará respaldado con el amparo de las pólizas de responsabilidad civil contractual y extracontractual. 4.1 solo en caso que el contratante debe responder es en el evento que por uso de los pasajeros que se transportan en el vehículo tal como: daños en cojinería, vidrios, ventanas, lamina y pintura o elementos que le sean entregados en operación para su comodidad en el servicio en condición de recibido de los mismos. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: QUINTA:</style> El CONTRATISTA, podrá celebrar convenio de colaboración empresarial. Con el objetivo de posibilitar una eficiente racionalización en el uso del equipo automotor y la mejor prestación del servicio; de igual manera el contratista podrá celebrar contratos con empresas de transporte colectivo en el evento de alta demanda, es de anotar que en los casis aquí citados son regulados por los artículos 24 y 25 de decreto de 174 de 2001. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: SEXTA:</style> PRECIO: las partes libremente acuerdan como precio del contrato de transporte que se suscribe es de pesos moneda corriente nacional, <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: SEPTIMA:</style> FORMA DE PAGO: Los pagos se cancelaran de acuerdo con lo pactado entre ambas partes. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: OCTAVA:</style> OBLICIGACIONES DEL CONTRATANTE 8.1 pagar el precio acordado del transporte 8.1 Pagar el precio acordado del transporte 8.2 Acatar las condiciones de seguridad impuestas por el contratista o reglamentos oficiales. 8.3 Supervisar el comportamiento y conservación del vehículo en las condiciones entregadas para el servicio. 8.4 Tomar el vehículo en el día, hora y lugar convenido. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: NOVENA:</style> CLAUSULAS DE TERMINACION: Son causales de terminación 9.1 No cancelar el precio del transporte en el termino acordado 9.2 No cumplir el contratista con las rutas y horarios señalados 9.3 Incumplir cualquiera de las cláusulas aquí pactadas. <style isBold='true' pdfFontName='Helvetica-Bold'>CLAUSULAS: DECIMA:</style> PENAL Las partes acuerdan que como clausula penal fijan la suma del valor de Pago del 10% del valor del contrato de transporte, que pagara la parte que incumpla el presente contrato a la parte cumplida. Para constancia de lo anterior se firma en Bogotá, a los "+$P{diaContrato}+" días del mes "+$P{mesContrato}+" del año: "+$P{añoContrato}+"."]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="60" y="700" width="200" height="1" uuid="2dc092d0-8790-4d36-bffa-697e63c4170b"/>
+			</line>
+			<line>
+				<reportElement x="320" y="700" width="200" height="1" uuid="8d4ee15f-3c8f-4fd7-8eb6-3429fc5f00bc"/>
+			</line>
+			<staticText>
+				<reportElement x="40" y="700" width="240" height="41" uuid="a9bc3b46-ba60-46b8-a779-6f48c6eecb9e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PABLO JESUS MONTAÑA DUARTE
+C.C.: 6.776.558
+FIRMA CONTRATISTA
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="295" y="700" width="240" height="41" uuid="678b0ec0-ec22-4028-b0cf-d2e929fc4d77"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{razonSocialCliente}+"\nC.C./NIT: "+$P{nitCliente}+"\nFIRMA CONTRATANTE"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="60" y="630" width="200" height="70" uuid="acef8a18-6a59-490f-a525-37d4df782bf1"/>
+				<imageExpression><![CDATA["logos/Firma don pablo.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="21" y="90" width="531" height="91" uuid="52751ccc-6eed-432e-8d5c-6efa0d3b9e48"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="21" y="90" width="420" height="15" uuid="a3b45d2d-446b-4832-af8b-be4a772db47d">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>CONTRATANTE:</style> "+$P{razonSocialCliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="105" width="420" height="15" uuid="7d889832-ed7b-48f7-bd0a-9bfcd7ef1be3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>REPRESENTANTE LEGAL:</style> PABLO JESUS MONTAÑA DUARTE"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="135" width="530" height="15" uuid="7b8e8987-a1b7-4900-b953-4638f08f9a3f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>OBJETO DEL CONTRATO:</style> "+$P{objetoContrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="120" width="420" height="15" uuid="a561e207-35ca-4244-9d18-09c225d04507">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>DIRECCION:</style> CALLE 17 # 68D - 38 MONTEVIDEO"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="150" width="530" height="15" uuid="d95ad776-4a69-4b1b-a6af-0ee9950eaee3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>ORIGEN - DESTINO:</style> "+$P{origenDestino}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="165" width="270" height="15" uuid="86783173-68e0-4b5f-ba35-46c53d5e392f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>FECHA INICIAL:</style> "+$P{fechaInicial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="165" width="260" height="15" uuid="ab76b526-3cde-46b7-8a92-d995837affda">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>FECHA VENCIMIENTO:</style> "+$P{fechaFinal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="120" width="110" height="15" uuid="8047993e-9760-4f23-b202-8ceac34222d0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>TEL./CEL.:</style> 4241186"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="105" width="110" height="15" uuid="9624ae2d-57de-4070-95c9-b72890d97bb5">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>CC:</style> 6.776.558"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="90" width="110" height="15" uuid="2e3a07cb-9c12-40b3-83b4-18049ed5401e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="3" leftPadding="4">
+					<pen lineWidth="1.0" lineColor="#736565"/>
+				</box>
+				<textElement markup="styled">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>CC./NIT.:</style>"+$P{nitCliente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="52" splitType="Prevent">
+			<staticText>
+				<reportElement x="169" y="0" width="230" height="45" forecolor="#030202" backcolor="#1A1818" uuid="a74d5cd6-7baa-4beb-9f8a-5f7f414012d3"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTES EXCLUSIVOS TREX S.A.S
+900.973.521-5]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

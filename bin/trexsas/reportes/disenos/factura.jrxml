@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="contrato_ocasional" pageWidth="612" pageHeight="1000" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="8a98866a-6347-4958-9644-4d27c9d2e184">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="pasajeros" uuid="77c2a3c8-5949-42f3-a829-0e6956efac78">
+		<field name="pasaj" class="java.lang.String">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="numeroFactura" class="java.lang.String"/>
+	<parameter name="fechaFactura" class="java.lang.String"/>
+	<parameter name="descripcion" class="java.lang.String"/>
+	<parameter name="razonSocialCliente" class="java.lang.String"/>
+	<parameter name="nit" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="valorLetras" class="java.lang.String"/>
+	<parameter name="direccion" class="java.lang.String"/>
+	<parameter name="fechaVencimiento" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="980">
+			<image>
+				<reportElement x="173" y="435" width="237" height="110" uuid="ec4c7843-362b-47c2-a5a9-580b9f5ac05c"/>
+				<imageExpression><![CDATA["logos/marca_aguatrex.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="170" splitType="Stretch">
+			<textField>
+				<reportElement mode="Transparent" x="380" y="48" width="190" height="50" uuid="4cb03279-c22f-4fdb-ae56-ed9a1b5e9038">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica-Bold'>PRE - FACTURA DE VENTA\nNo. "
++$P{numeroFactura}+"</style>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="170" y="53" width="200" height="60" uuid="36701503-c2a4-457c-a7b8-fe6f01085b5d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTES EXCLUSIVOS TREX S.A.S
+900.973.521-5
+CALLE 17 # 68D - 38 MONTEVIDEO
+4241186
+BOGOTÁ - Colombia
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="43" width="130" height="80" uuid="76206791-b974-4440-adcd-514c18521b79"/>
+				<imageExpression><![CDATA["logos/Logo trex.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="741" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="18" width="70" height="25" backcolor="#EDE6E6" uuid="ed647ba5-f6a3-460c-ba4c-1ae86191d184"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="23" width="50" height="15" uuid="6405ce5a-b5eb-4a08-a404-71e4a8c8bd48">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Señores:</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="43" width="70" height="25" backcolor="#EDE6E6" uuid="c63abde4-2bf1-40e7-a1cf-e8d846b3662e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="48" width="50" height="15" uuid="bee2c522-d28a-4c40-b095-468341bca050">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>NIT:</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="70" y="18" width="300" height="25" uuid="5fb8875f-f6db-451b-b80f-6f0b4d2ea5f3"/>
+			</rectangle>
+			<textField>
+				<reportElement x="80" y="23" width="280" height="15" uuid="252c415d-4506-4ca7-acfa-45fb99db4af2">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{razonSocialCliente}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="370" y="18" width="98" height="35" backcolor="#EDE6E6" uuid="f6d326a8-5315-4acb-b112-bf89099efc0f">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="376" y="28" width="82" height="15" uuid="bf11c4a2-34e0-4a40-b901-969ea5aed807">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Fecha factura</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="70" y="43" width="120" height="25" uuid="8ccee5c9-815d-4553-b7dc-b765a3e99684"/>
+			</rectangle>
+			<textField>
+				<reportElement x="80" y="48" width="100" height="15" uuid="97f31d09-0d88-4dd7-a9d0-8d207df80b45">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nit}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="370" y="53" width="98" height="40" uuid="871172fe-66da-48ac-9022-4b9bcbadaa28">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="379" y="63" width="80" height="15" uuid="880d584f-98fd-4bed-a80b-fc23da9d7fbb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaFactura}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="190" y="43" width="80" height="25" backcolor="#EDE6E6" uuid="dfa14cc8-bf68-43d4-805d-838281059002">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="200" y="48" width="62" height="15" uuid="c4d556d1-a2e2-49da-b2f8-0901b6f5953a">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Telefono:</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="270" y="43" width="100" height="25" uuid="a8db3abb-2077-4a34-b629-4ad959b45023">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="280" y="48" width="80" height="15" uuid="201c515f-6eb0-466f-94c2-f41add23f4da">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="468" y="18" width="103" height="35" backcolor="#EDE6E6" uuid="bbb298f5-da7c-4cd5-ae32-a5c6b9d19fee">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="475" y="28" width="88" height="15" uuid="6cd1b3cf-ba08-479b-9caf-e043cdd81057">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Fecha de vencimiento</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="468" y="53" width="103" height="40" uuid="2b730868-2c6b-4f49-a3fb-75aadc6575eb">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="475" y="63" width="88" height="15" uuid="19d9345e-ffa0-445e-99e2-3c695a5eca72">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaVencimiento}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="68" width="70" height="25" backcolor="#EDE6E6" uuid="c2d996a0-891e-4044-8c32-61cdcad25303">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="8" y="73" width="52" height="15" uuid="c752caf1-28a0-4c76-87ad-c21800a91be3"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Direccion:</style> ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="70" y="68" width="300" height="25" uuid="c018dec1-3cd5-4a9f-ae27-de9cccd27342">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="80" y="73" width="280" height="15" uuid="214de3ff-9d07-4b05-9a6e-52c670d78fe5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{direccion}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="123" width="430" height="25" backcolor="#EDE6E6" uuid="9b204a29-c43c-428b-933a-6f9741d6a059"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="128" width="410" height="15" uuid="38a26b48-50f4-4f47-9731-798a330047fd">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Descripcion</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="430" y="123" width="139" height="25" backcolor="#EDE6E6" uuid="08035456-176d-425e-ad77-a5db59be8edb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="440" y="128" width="121" height="15" uuid="79dcdb50-0b1b-42fe-b4db-fc3aa4cf6580">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Vr. Total</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="148" width="430" height="25" uuid="363c86b2-e64a-4c4f-babd-55760d732052"/>
+			</rectangle>
+			<textField>
+				<reportElement x="10" y="153" width="410" height="15" uuid="b4b45611-0956-4407-861a-4ed86eb8b79c">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA[$P{descripcion}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="430" y="148" width="139" height="25" uuid="2cc990ab-8b11-471a-aaef-3fae5fe21ca3"/>
+			</rectangle>
+			<textField>
+				<reportElement x="440" y="153" width="121" height="15" uuid="e4e7f0a1-fad5-4749-9826-9cc237865b2e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="203" width="120" height="15" uuid="0f116dca-d2b5-4e1e-8a7f-54276c0b1382">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>Valor en letras:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="218" width="410" height="15" uuid="f32c8ab2-830a-462c-8581-7edb98e64717">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA[$P{valorLetras}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="40" y="353" width="200" height="1" uuid="fb9e9c15-00c6-41c0-8561-98ce754d6bf6"/>
+			</line>
+			<staticText>
+				<reportElement x="40" y="353" width="200" height="41" uuid="16b9470e-6e6e-46f8-83a5-81e2d0f9792c"/>
+				<textElement textAlignment="Left" markup="styled"/>
+				<text><![CDATA[<style isBold='true' pdfFontName='Helvetica-Bold'>PABLO JESUS MONTAÑA DUARTE
+C.C.: 6.776.558
+REPRESENTANTE LEGAL</style>
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="283" width="200" height="70" uuid="ab3e262a-9817-4739-b875-e861ec5a89b2"/>
+				<imageExpression><![CDATA["logos/Firma don pablo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="40" y="263" width="120" height="15" uuid="2bff18e3-1d0b-496e-92b6-e79d99bde0f5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[Cordialmente: ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="52" splitType="Prevent"/>
+	</pageFooter>
+</jasperReport>
